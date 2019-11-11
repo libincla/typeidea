@@ -1,1 +1,1 @@
-helloworld
+django project blog 
