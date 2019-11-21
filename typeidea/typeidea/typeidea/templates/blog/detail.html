@@ -1,4 +1,4 @@
-{% extends "./base.html" %}
+{% extends "./base.html" %} 
 
 {% block title %}
     {{ post.title }}
@@ -8,7 +8,7 @@
     {% if post %}
         <h1>{{ post.title }}</h1>
         <div>
-            <span>分类: {{ post.category.name }}</span>
+            <span>!!分类: {{ post.category.name }}</span>
             <span>作者: {{ post.owner.username }}</span>
         </div>
         <hr />
@@ -16,4 +16,19 @@
             {{ post.content }}
         </p>
     {% endif %}
-{% endblock %}
+{% endblock %} -->
+<!-- <head>
+    <title>asd</title>
+</head>
+{% if post %}
+<h1> {{ post.title }}</h1>
+<div>
+    <span>分类: {{ post.category.name }}</span>
+    <span>作者: {{ post.owner.username }}</span>
+</div>
+<hr />
+<p>
+    !!!!!!!asdasdasd
+    {{ post.content }}
+</p>
+{% endif %} -->

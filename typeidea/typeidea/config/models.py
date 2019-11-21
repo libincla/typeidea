@@ -46,7 +46,7 @@ class Sidebar(models.Model):
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
     @classmethod
-    def get_cli(cls):
+    def get_all(cls):
         return cls.objects.filter(status=cls.STATUS_SHOW)
 
     #python内置的property装饰器负责把一个方法变成属性调用的
